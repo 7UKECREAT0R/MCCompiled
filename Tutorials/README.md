@@ -12,19 +12,19 @@ Learn about the preprocessor and how to use it to minimize repeated code.<br />
 
 ## Part 3: Values
 Use values to create player-specific or global values which can be used for comparison.<br />
-1. [Values]<br />
-2. [Selectors]<br />
-3. [Comparing]<br />
+1. [Values]
+2. [Selectors]
+3. [Comparing]
 
 ## Part 4: Comparisons
 Use IF statements to create ridiculously complex logic.<br />
-1. [All Conditions]<br />
-2. [Nesting]<br />
+1. [All Conditions]
+2. [Nesting]
 
 ## Part 5: Advanced
 Goes over the most advanced features of the language including project management, loops, and ghosts. Most people won't need these.<br />
-1. [Advanced Commands]<br />
-2. [Recursion]<br />
-3. [Ghosts]<br />
-4. [Include]<br />
+1. [Advanced Commands]
+2. [Recursion]
+3. [Ghosts]
+4. [Include]
 5. [Projects]
