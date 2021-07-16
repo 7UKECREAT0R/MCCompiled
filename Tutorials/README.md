@@ -3,6 +3,7 @@
 Look at the basic features of the language as well as the conceptual changes you need to make in your head.<br />
 1. [Conceptual Changes](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/1aConcepts.md)
 2. [Language Basics](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/1bBasics.md)
+3. [RawText Builder](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/1cRawtext.md)
 
 ## Part 2: Preprocessor
 Learn about the preprocessor and how to use it to minimize repeated code.<br />
