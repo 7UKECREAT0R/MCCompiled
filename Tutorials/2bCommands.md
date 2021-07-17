@@ -104,3 +104,38 @@ ppif age < 18 {
 }
 ```
 
+## pprep \<amount>
+Repeats the following block x times.
+```
+pprep 100 {
+  print SPAM!
+}
+```
+
+## pplog \<message>
+Logs a message to the console during compilation.
+```
+pplog Hey waddup from console!
+```
+
+## ppfile \[name]
+Sets the file offset. Not including a name resets the offset back to the source file.
+```
+ppfile repeat
+print Hello from "myfile-repeat.mcfunction"!
+```
+
+## ppmacro \<name> \[args]
+If a block is included after this, then it's treated as defining a macro. Macros let you prevent repeating a ton of code.
+```
+ppmacro spam message amount {
+  pprep amount {
+    print message
+  }
+}
+
+ppmacro spam "I" 100
+ppmacro spam "AM" 100
+ppmacro spam "SPAMMING" 100
+```
+
