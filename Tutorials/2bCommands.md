@@ -139,3 +139,12 @@ ppmacro spam "AM" 100
 ppmacro spam "SPAMMING" 100
 ```
 
+## ppfriendly \<variable>
+Converts a string variable to a more user-friendly name.
+```
+ppv item diamond_block
+ppfriendly item
+print item
+
+// Diamond Block
+```
