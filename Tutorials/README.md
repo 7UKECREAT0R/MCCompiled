@@ -13,16 +13,20 @@ Learn about the preprocessor and how to use it to minimize repeated code.<br />
 4. [Includes](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/2dIncludes.md)
 5. [STDMCC](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/2eStdmcc.md)
 
-## Part 3: Values
+## Part 3: Code
 Use values to create player-specific or global values which can be used for comparison.<br />
 1. [Values](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3aValues.md)
 2. [Selectors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3bSelectors.md)
-3. [Comparing](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3cComparing.md)
+3. [Blocks](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3cBlocks.md)
+4. [Teleportation](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3dTeleportation.md)
+5. [Tagging](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3eTagging.md)
+6. [Sound](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3fSound.md)
 
 ## Part 4: Comparisons
-Use IF statements to create ridiculously complex logic.<br />
-1. [All Conditions](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/4aConditions.md)
-2. [Nesting](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/4bNesting.md)
+Use IF statements to create ridiculously complex logic with ease.<br />
+1. [Comparing](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/4aComparing.md)
+2. [All Conditions](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/4bConditions.md)
+3. [Nesting](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/4cNesting.md)
 
 ## Part 5: Advanced
 Goes over the most advanced features of the language including project management, loops, and ghosts. Most people won't need these.<br />
