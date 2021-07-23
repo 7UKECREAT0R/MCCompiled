@@ -32,3 +32,10 @@ Set this value to the remainder of a `div` operation.
 
 ## value \<value> = \<integer/othervalue>
 Set this value.
+
+# Other Syntax
+## value display \<location> \[value]
+Set where this value is displayed. Not specifying a value will clear the selected location. Valid options for location are:
+* `list` Visible on the pause screen next to each player.
+* `sidebar` Visible on the right sidebar for all players.
+* `belowName` Visible below the player's name in-game.
