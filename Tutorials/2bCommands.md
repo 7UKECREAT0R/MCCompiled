@@ -148,3 +148,33 @@ print item
 
 // Diamond Block
 ```
+
+## ppupper \<variable>
+Converts a string variable to a completely uppercase name.
+```
+ppv name Luke
+ppupper name
+print name
+
+// LUKE
+```
+
+## pplower \<variable>
+Converts a string variable to a completely lowercase name.
+```
+ppv text Hello World
+pplower text
+print text
+
+// hello world
+```
+
+## ppsubstring \<variable>
+Converts a string variable to a substring of itself.
+```
+ppv text abcdef
+ppsubstring text 2
+print text
+
+// cdef
+```
