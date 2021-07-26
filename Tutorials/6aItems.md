@@ -23,6 +23,21 @@ List of properties:
 * `lock: inventory` Makes item undroppable and unusable for crafting.
 * `lock: slot` Makes item immovable from its slot as well as /\
 
+## Multiple Items
+You can also put multiple items in one file. Just specify a new `name`.
+```
+name: hub_compass
+displayname: Open HUB Menu
+item: compass
+enchant: infinity
+
+name: hub_gadgets
+displayname: Gadgets
+item: slime_ball
+enchant: infinity
+```
+
+
 # Compiling
 To ensure you're able to give the item, make sure to include
 ```
