@@ -15,6 +15,7 @@ List of properties:
 * `count` The amount of items.
 * `item` The type of the item.
 * `enchant` Adds an enchantment to the item. Requires both name and level.
+* `damage` Sets the amount of damage dealt to this item (durability)
 * `keep` true or false. Whether this item should never drop.
 * `canplaceon` Adds a block to the CanPlaceOn list.
 * `candestroy` Adds a block to the CanDestroy list.
