@@ -34,8 +34,9 @@ Goes over the most advanced features of the language including project managemen
 2. [Ghosts](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5bGhosts.md)
 3. [Structs](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5cStructs.md)
 
-## Part 6: External Files
-You can also include different types of external files to make custom stuff.
+## Part 6: Descriptors
+Descriptors are a powerful way to take your code to the next level.
+INTRO: [Introduction to Descriptors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6Intro.md)
 1. [Custom Items](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6aItems.md)
 2. [Custom Blocks](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6bBlock.md)
 3. [Custom Entities](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6cEntities.md)
