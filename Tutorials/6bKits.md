@@ -38,3 +38,7 @@ To use a kit, simply write a `kit` statement. This will give the kit to the sele
 ```
 kit pvp
 ```
+If you want to access a kit description, just type `kit.kitname.description` in your code as if it was a preprocessor variable.
+```
+printp Kit Description: kit.op.description
+```
