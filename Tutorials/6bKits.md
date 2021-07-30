@@ -32,6 +32,7 @@ List of properties:
 * `autoequip` true or false. Automatically equip armor? Only works on regular items.
 * `clear` true or false. Clear the player's inventory before giving.
 * `message` Message sent to the player receiving the kit. Use `{player}` to denote the player's name.
+* `cost` The cost of this kit. Accessed in your code by `kit.kitname.cost`.
 
 # Usage
 To use a kit, simply write a `kit` statement. This will give the kit to the selected player/players.
