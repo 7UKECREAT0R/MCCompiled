@@ -24,7 +24,7 @@ To go along with drop descriptors, you can also create kits! Kits also have a fe
     item: diamond_boots
     autoequip: true
 ```
-Note that the `op` kit uses the `op_sword` from \[6A: Drops].
+Note that the `op` kit uses the `op_sword` from the [drops example](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6aDrops.md).
 
 List of properties:
 * `description` A brief description of the kit.
