@@ -168,13 +168,3 @@ print text
 
 // hello world
 ```
-
-## ppsubstring \<variable>
-Converts a string variable to a substring of itself.
-```
-ppv text abcdef
-ppsubstring text 2
-print text
-
-// cdef
-```
