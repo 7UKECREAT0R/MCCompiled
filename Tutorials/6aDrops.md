@@ -7,6 +7,7 @@ Hate having to create structures for each of your custom items/kits? Use item de
   enchant:      unbreaking 10
   enchant:      sharpness 5
   enchant:      fire_aspect 2
+  lock:         inventory
 ```
 List of properties:
 * `name` The name of the item in-game.
@@ -39,3 +40,25 @@ The give statement automatically supports custom drops.
 ```
 give op_sword 1
 ```
+You can also access your custom item's properties in your code. Simply use any of these as if they were a preprocessor variable. Note that this is for the op_sword in the example.
+```
+drop.op_sword.name            "§bOP Sword"
+drop.op_sword.count           1
+drop.op_sword.item            "netherite_sword"
+drop.op_sword.enchantcount    3
+
+drop.op_sword.enchant1.name   "Unbreaking"
+drop.op_sword.enchant2.name   "Sharpness"
+drop.op_sword.enchant1.level  10
+drop.op_sword.enchant2.level  5
+drop.op_sword.enchant1.full   "Unbreaking X"
+drop.op_sword.enchant2.full   "Sharpness V"
+
+drop.op_sword.damage          0
+drop.op_sword.keep            "False"
+drop.op_sword.lock            "inventory"
+
+drop.op_sword.canplaceon1     ""
+drop.op_sword.candestroy1     ""
+```
+For properties which can have multiple, such as enchants or canplaceon, a number is placed after them to denote which one you want to access. Enchants have three sub-properties, being `full`, `name` and `level` so remember that you can pick between them. For properties which have multiple elements, you can also append `count` to get how many of them there are (see the example)
