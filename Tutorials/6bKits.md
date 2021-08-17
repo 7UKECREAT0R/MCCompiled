@@ -39,7 +39,13 @@ To use a kit, simply write a `kit` statement. This will give the kit to the sele
 ```
 kit pvp
 ```
-If you want to access a kit description, just type `kit.kitname.description` in your code as if it was a preprocessor variable.
+If you want to access your kit properties, just type any of these in your code as if it was a preprocessor variable. Note that this will be for the "op" kit as put in the example.
 ```
-printp Kit Description: kit.op.description
+kit.op.description      "Overpowered kit that's fun only when you're the one playing it."
+kit.op.item1            "op_sword"
+kit.op.item2            "fishing_rod"
+kit.op.autoequip        "True"
+kit.op.cost             0
+kit.op.clear            "False"
+kit.op.message          ""
 ```
