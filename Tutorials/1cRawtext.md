@@ -8,7 +8,7 @@ To open the generator, run `rawtext-builder.bat` or type `mc-compiled.exe -jsonb
 If you hit 'A' this will let you add an item. An item can be any of the following types:
 * `TEXT <string>`                 Regular text.
 * `SCORE <objective> <selector>`  A scoreboard value.
-* `SELECTOR <selector>`           A player or entity name.
+* `SELECTOR <selector>`           A player or entity selector.
 
 The uppercase isn't required. You can append these elements together to create a cool formatted sentence to use!
 
