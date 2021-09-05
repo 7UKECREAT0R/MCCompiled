@@ -15,4 +15,4 @@ scoreboard players add @s money 1
 Every statement made in MCCompiled is a top level statement, as in, they don't require stacking executes or other things like that. If you place a statement inside an `if` block, the logic will be done for you by the compiler.
 
 ## Selectors
-When setting selectors via the `select` statement, you should only include the base of it, such as @p, @s, etc... The compiler will do the rest for you. You can include selectors if needed, however.
+When setting selectors via the `select` statement, you should only include the base of it, such as @p, @s, etc... The compiler will do the rest of the logic and structuring for you. This is an important distinction to make when working with MCC; The compiler attempts to make commands much more lenient and "automatic" per say.
