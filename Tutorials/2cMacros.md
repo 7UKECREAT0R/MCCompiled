@@ -5,13 +5,12 @@ Macros are a useful way to prevent a lot of repeated code. They work similarly t
 To create a macro, use the syntax `ppmacro <macro name> <args>`.
 ```
 ppmacro deny message {
-  select push @s
+  select @s
   printp [color: RED]message
-  select pop
 }
 ```
 
-After a macro is defined, you can call it by typing in the name and your inputs.<br />
+After a macro is defined, you can run it by typing in the name and your inputs.<br />
 To input a string with multiple words, you can surround it with `"`.
 ```
 ppmacro deny "You can't buy that yet!"
