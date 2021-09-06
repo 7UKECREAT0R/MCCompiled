@@ -11,7 +11,6 @@ Learn about the preprocessor and how to use it to minimize repeated code.<br />
 2. [Commands](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/2bCommands.md)
 3. [Macros](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/2cMacros.md)
 4. [Includes](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/2dIncludes.md)
-5. [STDMCC](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/2eStdmcc.md)
 
 ## Part 3: Code
 Use values to create player-specific or global values which can be used for comparison.<br />
