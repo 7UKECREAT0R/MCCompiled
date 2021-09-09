@@ -15,23 +15,25 @@ initialize coins
 # Syntax
 Now let's take a look at all of the different ways the value command can be used directly. Later, when learning about if-statements, these values will be able to be used. You can also place them in `print` and `printp` statements which will be gone over later as well.
 
+> You can also use inline statements without the `value` keyword if you want!<br />Something like this: `coins add 10`. You can also use operators instead of words, like `add` -> `+=`, making `coins += 10`.
+
 ## value \<value> add \<integer/othervalue>
-Add a value to this value.
+Add a value to this value. `+=` or `add`
 
 ## value \<value> sub \<integer/othervalue>
-Subtract a value from this value.
+Subtract a value from this value. `-=` or `sub`
 
 ## value \<value> mul \<integer/othervalue>
-Multiply this value with another value.
+Multiply this value with another value. `*=` or `mul`
 
 ## value \<value> div \<integer/othervalue>
-Divide this value with another value.
+Divide this value with another value. `/=` or `div`
 
 ## value \<value> mod \<integer/othervalue>
-Set this value to the remainder of a `div` operation.
+Set this value to the remainder of a `div` operation. `%=` or `mod`
 
 ## value \<value> = \<integer/othervalue>
-Set this value.
+Set this value. `set` or `=`
 
 # Other Syntax
 ## value display \<location> \[value]
