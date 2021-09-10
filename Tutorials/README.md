@@ -29,8 +29,8 @@ Use IF statements to create ridiculously complex logic with ease.<br />
 
 ## Part 5: Advanced
 Goes over the most advanced features of the language including project management, loops, and ghosts. Most people won't need these.<br />
-1. [Advanced Commands](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5aAdvanced.md)
-2. [Ghosts](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5bGhosts.md)
+1. [Data Types](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5aDataTypes.md)
+2. [Vectors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5bVectors.md)
 3. [Structs](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5cStructs.md)
 
 ## Part 6: Descriptors
