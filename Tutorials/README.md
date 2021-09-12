@@ -19,7 +19,7 @@ Use values to create player-specific or global values which can be used for comp
 3. [Blocks](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3cBlocks.md)
 4. [Teleportation](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3dTeleportation.md)
 5. [Tagging](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3eTagging.md)
-6. [Sound](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3fSound.md)
+6. [Functions](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/3fFunctions.md)
 
 ## Part 4: Comparisons
 Use IF statements to create ridiculously complex logic with ease.<br />
