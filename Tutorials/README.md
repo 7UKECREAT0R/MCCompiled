@@ -28,7 +28,7 @@ Use IF statements to create ridiculously complex logic with ease.<br />
 3. [Nesting](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/4cNesting.md)
 
 ## Part 5: Advanced
-Goes over the most advanced features of the language including project management, loops, and ghosts. Most people won't need these.<br />
+Goes over the most advanced features of the language including new data types, structures, and vectors.<br />
 1. [Data Types](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5aDataTypes.md)
 2. [Vectors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5bVectors.md)
 3. [Structs](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5cStructs.md)
