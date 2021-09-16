@@ -34,7 +34,7 @@ Goes over the most advanced features of the language including project managemen
 3. [Structs](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/5cStructs.md)
 
 ## Part 6: Descriptors
-Descriptors are a powerful way to take your code to the next level.
+Descriptors are a powerful way to add new content to the game or add new functionality to existing stuff.
 > INTRO: [Introduction to Descriptors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6Intro.md)
 1. [Items](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6aItems.md)
 2. [Loot Tables](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6bLootTables.md)
