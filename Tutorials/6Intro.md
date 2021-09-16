@@ -10,27 +10,18 @@ descriptor {
   // Code here
 }
 ```
-It's simply placed anywhere you want in your code. Note that all the sample code ahead and in this section must be placed inside this `descriptor` statement.
+It's simply placed anywhere you want in your code. Note that all the sample code ahead and in this section must be placed inside this descriptor statement.
 
 ## A Basic Block
-Let's take a look at a custom block defined using descriptors.
+Let's take a look at a custom block defined inside a descriptor statement.
 ```
-descriptor {
   block {
     internal: uraniumblock
     name: Uranium Block
     texture: textures/uranium.png
-    
+
     flammable: 0
     destroytime: 10
-    
-    oninteract: UraniumExplode
   }
-}
-
-// This will be called when block is interacted with.
-function UraniumExplode {
-  setblock ~ ~ ~ air
-  explode
-}
 ```
+As you can see, there's some basic block properties like `flammable`, `destroytime`, and `texture`. The `name` is how the block will appear ingame. The `internal` name is how you can obtain the item through `/give projectname:internalname`. Usually the projectname is just the name of the MCC file.
