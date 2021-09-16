@@ -43,4 +43,6 @@ Descriptors are a powerful way to take your code to the next level.
 5. [Entities](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6dEntities.md)
 6. [Particles](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6eParticles.md)
 7. [Sounds](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6fSounds.md)
-8. [ADVANCED](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6gAdvanced.md)
+
+### 6B: Event Handling
+1. [Function Calls](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6gFunctionCalls.md)
