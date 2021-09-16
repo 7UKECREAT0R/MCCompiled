@@ -35,4 +35,12 @@ Goes over the most advanced features of the language including project managemen
 
 ## Part 6: Descriptors
 Descriptors are a powerful way to take your code to the next level.
-0: [Introduction to Descriptors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6Intro.md)
+> INTRO: [Introduction to Descriptors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6Intro.md)
+1. [Items](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6aItems.md)
+2. [Loot Tables](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6bLootTables.md)
+3. [Blocks](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6cBlocks.md)
+4. [Recipes](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6dRecipes)
+5. [Entities](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6dEntities.md)
+6. [Particles](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6eParticles.md)
+7. [Sounds](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6fSounds.md)
+8. [ADVANCED](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6gAdvanced.md)
