@@ -1,33 +1,36 @@
 # Descriptors
 Now we're entering into the world of actually modding the game. You may have already noticed that MCCompiled outputs into a nicely formatted behavior pack, but it can do more than just generate functions!
 
-## Descriptor Files
-Descriptor files use the extension `.descriptor`. These files are the modding base for your entire project. Descriptors let you define and generate relatively complex structures with ease, whether it be actual minecraft structures or custom items or entites. To put it simply, they compress multiple different file types and formats down into one relatively simple and easy to read file.
+## Descriptor Statements
+These statements allow you to append information into your datapack and begin modifying the game like you've never seen it before. Descriptor statements have different syntax from the rest of MCCompiled, but it's not too difficult to understand. This entire section will be dedicated to going over the different kinds of descriptors, their properties, and how they can be used and attached to your code.
 
-## Format
-A descriptor file contains multiple descriptors. These are separated by a type identifier. The different pages in this section detail over each type identifier separately. The general format however follows the same rule: Line must start with an `&` symbol and contain both the type and symbol name for your descriptor (in order).
+<br />A basic descriptor statement will look something like this:
 ```
-& drop awesome_sword
-...
+descriptor {
+  // Code here
+}
 ```
-The symbol name (in this case `awesome_sword`) is what's used in your code to make a reference to the described object. I personally recommend indenting the lines a bit after your section identifier. Makes it easier to read. 
+It's simply placed anywhere you want in your code. Note that all the sample code ahead and in this section must be placed inside this `descriptor` statement.
 
-## Manifest
-To change up the pack manifest and actually name your final behavior pack, use the `manifest` type; A special descriptor type which isn't named.
+## A Basic Block
+Let's take a look at a custom block defined using descriptors.
 ```
-& manifest
-  name: My Epic Pack
-  description: The best behavior pack ever.
-```
-UUIDs will automatically be generated off of this information. 
+descriptor {
+  block {
+    internal: uraniumblock
+    name: Uranium Block
+    texture: textures/uranium.png
+    
+    flammable: 0
+    destroytime: 10
+    
+    oninteract: UraniumExplode
+  }
+}
 
-## Compiling
-In your actual `.mcc` file, you can include your descriptors by typing:
+// This will be called when block is interacted with.
+function UraniumExplode {
+  setblock ~ ~ ~ air
+  explode
+}
 ```
-compile <filename>
-```
-If you want MCCompiled to scan the entire directory and automatically compile descriptors, use:
-```
-compile all
-```
-And that's it! Your compiled files will be included in the final behavior pack output, AND you can use them in your code when available!
