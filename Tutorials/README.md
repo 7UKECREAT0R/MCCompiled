@@ -35,7 +35,4 @@ Goes over the most advanced features of the language including project managemen
 
 ## Part 6: Descriptors
 Descriptors are a powerful way to take your code to the next level.
-> INTRO: [Introduction to Descriptors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6Intro.md)
-1. [Drops](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6aDrops.md)
-2. [Kits](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6bKits.md)
-3. [GUI](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6cGUI.md)
+0: [Introduction to Descriptors](https://github.com/7UKECREAT0R/MCCompiled/blob/main/Tutorials/6Intro.md)
