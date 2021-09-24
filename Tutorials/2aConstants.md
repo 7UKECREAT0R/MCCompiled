@@ -1,8 +1,8 @@
 # Preprocessor Variables
-Before discussing constants, let's go over preprocessor variables once more. They are a useful way to make a value that is used multiple times throughout your code. This section is the first in the Preprocessor series of guides. You can define a preprocessor variable using the command `ppv <name> <value>`, and from there, any time the word `name` comes up it will be replaced with `value` automatically.
+Before discussing constants, let's go over preprocessor variables once more. They are a useful way to make a value that is used multiple times throughout your code. This section is the first in the Preprocessor series of guides. You can define a preprocessor variable using the command `ppv <name> <value>`, and from there, any time the word `$name` comes up it will be replaced with `value` automatically.
 ```
-ppv my_name Luke
-print Hi my name is my_name!
+ppv name Luke
+print Hi my name is $name!
 ```
 Preprocessor variables can be overwritten, added to, multiplied with, compared, and so much more which will be gone over in the next section.
 
