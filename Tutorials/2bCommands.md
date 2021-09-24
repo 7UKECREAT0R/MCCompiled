@@ -8,8 +8,8 @@ ppv age 16
 ppv pi 3.14
 ppv name Luke
 
-print Hi, I'm name and I'm age years old!
-print PI is equivalent to pi.
+print Hi, I'm $name and I'm $age years old!
+print PI is equivalent to $pi.
 ```
 
 ## ppinc \<variable>
@@ -122,8 +122,8 @@ pplog Hey waddup from console!
 If a block is included after this, then it's treated as defining a macro. Macros let you prevent repeating a ton of code.
 ```
 ppmacro spam message amount {
-  pprep amount {
-    print message
+  pprep $amount {
+    print $message
   }
 }
 
@@ -137,7 +137,7 @@ Converts a string variable to a more user-friendly name.
 ```
 ppv item diamond_block
 ppfriendly item
-print item
+print $item
 
 // Diamond Block
 ```
@@ -147,7 +147,7 @@ Converts a string variable to a completely uppercase name.
 ```
 ppv name Luke
 ppupper name
-print name
+print $name
 
 // LUKE
 ```
@@ -157,7 +157,7 @@ Converts a string variable to a completely lowercase name.
 ```
 ppv text Hello World
 pplower text
-print text
+print $text
 
 // hello world
 ```
