@@ -3,8 +3,8 @@
 ## Scoreboard
 If you're at all familiar with scoreboards, they aren't present in MCCompiled. There is a command named `value` and it's what `if` statements default to. Values *are* scoreboard values under the hood, but the syntax is simplified and the values can be defined and initialized wherever in your code.
 ```
-select @s
-value money add 1
+define money
+money += 1
 ```
 Compiles to:
 ```
