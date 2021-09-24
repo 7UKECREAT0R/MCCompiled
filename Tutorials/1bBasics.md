@@ -22,19 +22,19 @@ print [color: GREEN] Hello World!
 When we compile again and run it, you might notice the command is slightly different now. MCCompiled identified the color and replaced it with the appropriate color code for Minecraft! If we run the newly compiled function (remember to `/reload`!), the text is now green! (big surprise)
 
 # Cooler Thing
-Okay, lets ramp it up a bit. The new goal will be to teleport the player onto a glass platform in the sky. Create a new `.mcc` file; we're going to define a constant. This means that after we define it, we can type it anywhere in our code and the value of it will be replaced. Kind of like an all-seeing variable.
+Okay, lets ramp it up a bit. The new goal will be to teleport the player onto a glass platform in the sky. Create a new `.mcc` file; we're going to define a preprocessor variable. This means that after we define it, we can type it anywhere in our code (with a '$' before it) and the value of it will be replaced. Kind of like an all-seeing variable.
 ```
 ppv height 25
 ```
-Now, every time the word `height` pops up in our code, it will be replaced with 25. `ppv` means "Preprocessor variable." Let's continue by teleporting the player next.
+Now, every time `$height` pops up in our code, it will be replaced with 25. `ppv` means "Preprocessor variable." Let's continue by teleporting the player next.
 ```
 ppv height 25
-tp up height
+tp ~ ~$height ~
 ```
-The `tp` command syntax can be used similarly to the original Minecraft command; However, it's easier to use `tp <direction> <amount>`. Finally, let's fill the area below the player by using relative coordinates.
+The `tp` command syntax is used similarly to the original Minecraft command, however it assumes the selector is `@s` by default. So this will teleport the player `$height` blocks into the air, or 25 in this case.
 ```
 ppv height 25
-tp up height
+tp ~ ~$height ~ 
 fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 glass
 ```
 The tilde \[~\] means that the coordinate will be relative to where the player is right now, which in this case is way up in the air. Awesome, now you can compile the .mcfunction file and run it!
