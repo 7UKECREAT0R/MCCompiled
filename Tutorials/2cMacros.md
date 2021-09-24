@@ -6,7 +6,7 @@ To create a macro, use the syntax `ppmacro <macro name> <args>`.
 ```
 ppmacro deny message {
   select @s
-  printp [color: RED]message
+  printp [color: RED]$message
 }
 ```
 
@@ -20,10 +20,10 @@ ppmacro deny "You can't buy that yet!"
 Macros *can* call themselves over again, but this is disabled by default to detect errors. Compile with `-r` to disable this recursion guard. After that you're free to call as many times in as you like. Remember that every recursion stacks onto how much memory is used by the application (which can get quite large).
 ```
 ppmacro pillar x y z {
-  place stone x y z
+  place stone $x $y $z
   ppinc y
   ppif y < 255 {
-    ppmacro pillar x y z
+    ppmacro pillar $x $y $z
   }
 }
 ```
