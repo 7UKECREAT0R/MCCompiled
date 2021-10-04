@@ -31,12 +31,15 @@ Calling a function can be done two ways.
 
 > Using the call keyword (clearer, more concise):
 ```
-call <function> <args>
+call <function>
+call <function> [args]
 ```
 
 > Implied call (shorter, easier to read):
 ```
+function()
 function(args)
+function(multiple, arguments)
 ```
 
 It doesn't matter how you choose to call a function; both compile to exactly the same code!
