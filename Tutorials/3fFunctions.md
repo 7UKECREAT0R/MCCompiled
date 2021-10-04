@@ -85,7 +85,7 @@ This is more for advanced projects, but this function file will be placed into i
 ### `secure`
 ```
 function secure add_coins amount {
-  coins += $amount
+  coins += amount
 }
 ```
 Private functions have a thin layer of security over them to prevent players from executing them in-game, however other things can execute them fine.
