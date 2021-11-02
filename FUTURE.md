@@ -91,6 +91,10 @@ numbers[4] = 123
 numbers[50] = 2
 ```
 
+## Structure Generators
+At some point it would be neat to let people generate structures from different file types like
+images or midi files -> pixel art or noteblocks. 
+
 ## Teleporting To Scoreboards
 [todo]
 
