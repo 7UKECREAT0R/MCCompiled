@@ -91,9 +91,18 @@ numbers[4] = 123
 numbers[50] = 2
 ```
 
-## Structure Generators
-At some point it would be neat to let people generate structures from different file types like
-images or midi files -> pixel art or noteblocks. 
+## Debugger
+Having a debugger built into compiled applications could be easy to implement and very useful for
+writing more complex projects. It's not possible to stop a function from executing but forcing it
+to hit the function limit and having it halt is probably the best option.
+> Breakpoints
+```
+define time
+time += 20
+
+@break
+```
+This would print all defined variables to the chat at the time and stop execution.
 
 ## Teleporting To Scoreboards
 [todo]
