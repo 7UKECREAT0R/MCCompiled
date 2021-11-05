@@ -15,11 +15,16 @@ For those which select multiple players/entities, the commands will be run indiv
 In the next section, we'll go over if-statements and how they can be used to implement basic logic. For now, let's combine selectors and values to make a money system. This code here will be part of a command that could be something like `/function work`!
 ```
 define money
-initialize money
 
 select @s
 money += 10
 
 printp [color: GREEN]You just made $10!
 ```
-So now, when someone runs the function they will be given 10 `money` and sent a message! Simple, right?
+So now, when someone runs the function they will be given 10 `money` and sent a message!<br />
+Here's what the code would usually look like as minecraft commands:
+```
+scoreboard objectives add money
+scoreboard players add @s money 10
+tellraw @s {"rawtext":[{"text": "§aYou just made $10!"}]}
+```
