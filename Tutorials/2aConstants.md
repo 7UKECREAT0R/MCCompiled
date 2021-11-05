@@ -7,7 +7,7 @@ print Hi my name is $name!
 Preprocessor variables can be overwritten, added to, multiplied with, compared, and so much more which will be gone over in the next section.
 
 # Actual Constants
-Constants work similarly to preprocessor variables, but there's a lot more of them and they are only evaluated once at compile time. Defined constants are placed in the `definitions.def` file. If you take a look at the contents of it, you'll notice there's a lot going on. There are both `CATEGORY`ies and definitions that look like `X IS Y`. These constants specify things that help shorten and make your code more readable. For example, setting red wool as `[wool: red]` rather than `14` helps you know "oh yeah, this is red wool!" Speaking of which, the way to reference ANY of the constants you find you want to use is just to put `[category: query]` anywhere in your code. They are case insensitive too so use uppercase, lowercase, all the cases!<br /><br />
+Constants work similarly to preprocessor variables, but there's a lot more of them and they are only evaluated once at compile time. Defined constants are placed in the `definitions.def` file. If you take a look at the contents of it, you'll notice there's a lot going on. There are both `CATEGORY`s and definitions that look like `X IS Y`. These constants specify things that help shorten and make your code more readable. For example, setting red wool as `[wool: red]` rather than `14` helps you know "oh yeah, this is red wool!" Speaking of which, the way to reference ANY of the constants you find you want to use is just to put `[category: query]` anywhere in your code. They are case insensitive too so use uppercase, lowercase, all the cases!<br /><br />
 
 You can even define your own if you want. Just make sure the keywords like `CATEGORY` and `IS` are uppercase.
 ```
@@ -18,4 +18,9 @@ CATEGORY EXAMPLE
 ```
 print [Example: MyConstant].
 print Fun fact: PI is [EXAMPLE:PI].
+```
+
+There's also additional syntax for combining multiple constants in one go, but it's really only useful with the `CHAT COLOR` category.
+```
+print [color: red, bold]WADDUP
 ```
