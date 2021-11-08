@@ -11,6 +11,11 @@ By default, players will not have this value (even 0). To a certain extent, the 
 define coins
 initialize coins
 ```
+If you don't like typing `initialize` every time (I sure don't) you can also use `init`.
+```
+define coins
+init coins
+```
 
 # Syntax
 Now let's take a look at all of the different ways the value command can be used directly. Later, when learning about if-statements, these values will be able to be used. You can also place them in `print` and `printp` statements which will be gone over later as well.
