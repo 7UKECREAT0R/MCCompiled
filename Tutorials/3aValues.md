@@ -6,7 +6,7 @@ Before a value can be used, it must be defined. Defining a value can be done by 
 ```
 define coins
 ```
-By default, players will not have this value (even 0) so it may be a good idea to initialize it as well. This makes it so that every player has at least 0 of the value.
+By default, players will not have this value (even 0). To a certain extent, the value is equivalent to `null` so it may be a good idea to initialize it as well to ensure it is not null for any players.
 ```
 define coins
 initialize coins
