@@ -2,7 +2,7 @@
 The rawtext generator is used to make raw JSON messages for use in the `tellraw` or `titleraw` commands.
 
 ## Usage
-To open the generator, run `rawtext-builder.bat` or type `mc-compiled.exe -jsonbuilder` in a command line. This will open up the user interface.
+To open the generator, run `rawtext-builder.bat` or type `mc-compiled.exe --jsonbuilder` in a command line. This will open up the user interface.
 
 ## Adding Items
 If you hit 'A' this will let you add an item. An item can be any of the following types:
