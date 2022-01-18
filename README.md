@@ -8,7 +8,21 @@ You can download and compile the source code or download the latest pre-compiled
 Check out the Tutorials folder for a deep dive into the langauge and all of its features.
 
 ## Why was this made?
-Development in Minecraft was never easy. Sure, you can get good at writing commands and make cool stuff but there was always an aspect to it which felt overcomplicated. Since I moved over to bedrock edition, I realized the command system there was *bad*. Not like "oh yeah, i might be able to work with this," like bad bad. Practically all of the flexibility from Java edition is lost in Bedrock edition... So I made this! 
+Because developing things in Minecraft commands is hard, and upon taking on a producer position at Lifeboat I realized I would be writing a lot of these. MCCompiled is meant to heavily reduce the overhead in writing code for minecraft by standing as a middleman. It has built in intrinsics and tokens which compile to be dozens of times longer.
+```
+define "coins"
+coins += 10 * 3
+```
+Compiles to:
+```
+scoreboard objectives add "MCC_TEMP0" dummy
+scoreboard objectives add "MCC_TEMP1" dummy
+scoreboard objectives add "coins" dummy
+scoreboard players set @a "MCC_TEMP0" 10
+scoreboard players set @a "MCC_TEMP1" 3
+scoreboard players operation * "MCC_TEMP0" *= @a "MCC_TEMP1"
+scoreboard players operation * "coins" += @a "MCC_TEMP0"
+```
 
 ## What does it have?
 I made MCCompiled to standardize the commands of Minecraft to look and feel more like a programming language. There's support for things like variables, different data types, structs, if statements, loops, and tons more. It also contains many sub-features which do specialized stuff like letting you give players enchanted/named items!
