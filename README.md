@@ -1,6 +1,6 @@
 # MCCompiled
-[source code](https://github.com/7UKECREAT0R/MCCompiledSource) -
-Programming language which is "compiled" down to a Minecraft Bedrock Edition behavior pack.
+[source code](https://github.com/7UKECREAT0R/MCCompiledSource) - Programming language which is "compiled" down to a Minecraft Bedrock Edition behavior pack.
+[wiki](https://github.com/7UKECREAT0R/MCCompiled/wiki) - Learn about the language and how to use it.
 
 # About
 MCCompiled is an open source programming lanaguge designed for everyone who mods Minecraft. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. It differs from Minecraft Commands for a multitude of reasons, but the main reason is the efficiency of code. The compiler features a large set of options and an IDE-like mode which watches files and automatically recompiles when updated.
@@ -31,6 +31,9 @@ Ever wanted to have custom data structures? MCCompiled supports those too. You c
 
 ### MCStructure Generation
 Make use of the custom NBT implementation and use some of the special new commands that extend Minecraft's systems by generating structures and using their load parameters. You can /give named and enchanted items as well as randomly scatter blocks throughout an area, similarly to fill. (more of these are to come)
+
+### Definitions
+MCCompiled is shipped with a [definitions.def](https://github.com/7UKECREAT0R/MCCompiledSource/blob/master/mc-compiled/definitions.def) file which is a massive library of organized aliases for inserting strings. One of my favorite parts of this file is that it has all text colors defined under normalized names. Rather than having to type `§6` you can just type `[color: gold]`. Give the file a look over to understand why it's so useful.
 
 # Sold?
 MCCompiled is set to release March 1st, 2022 once I finish the stress testing phase, so be on the lookout for that. Check out the wiki cheat sheet for a full display of the language features.
