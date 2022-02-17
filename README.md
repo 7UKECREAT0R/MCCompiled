@@ -1,5 +1,5 @@
 # MCCompiled
-[source code](https://github.com/7UKECREAT0R/MCCompiledSource) - Programming language which is "compiled" down to a Minecraft Bedrock Edition behavior pack.
+[source code](https://github.com/7UKECREAT0R/MCCompiledSource) - Programming language which is "compiled" down to a Minecraft Bedrock Edition behavior pack.<br />
 [wiki](https://github.com/7UKECREAT0R/MCCompiled/wiki) - Learn about the language and how to use it.
 
 # About
