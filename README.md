@@ -1,37 +1,36 @@
-# MCCompiled - [SOURCE CODE HERE](https://github.com/7UKECREAT0R/MCCompiledSource)
-Programming language which is "compiled" down to a Minecraft Bedrock Edition .mcfunction file.
+# MCCompiled
+[source code](https://github.com/7UKECREAT0R/MCCompiledSource) -
+Programming language which is "compiled" down to a Minecraft Bedrock Edition behavior pack.
 
-## how do I use this?
-unreleased as of now
+# About
+MCCompiled is an open source programming lanaguge designed for everyone who mods Minecraft. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. It differs from Minecraft Commands for a multitude of reasons, but the main reason is the efficiency of code. The compiler features a large set of options and an IDE-like mode which watches files and automatically recompiles when updated.
 
-## tutorials on the language itself?
-check out the Tutorials folder on the main GitHub for a deep dive into the langauge and all of its features.
+# Features
+Okay, but what's so special about it? The language is similar to that of javascript, using blocks and different code styles to construct unique and difficult-to-write Minecraft commands with ease.
 
-## why was this made?
-Because developing things in Minecraft commands is hard, and upon taking on a producer position at Lifeboat I realized I would be writing a lot of these. MCCompiled is meant to heavily reduce the overhead in writing code for Minecraft. It has built in intrinsics and tokens which compile to be dozens of times longer than the original code.
-```
-define "coins"
-coins += 10 * 3
-```
-Compiles to:
-```
-scoreboard objectives add "MCC_TEMP0" dummy
-scoreboard objectives add "MCC_TEMP1" dummy
-scoreboard objectives add "coins" dummy
-scoreboard players set @a "MCC_TEMP0" 10
-scoreboard players set @a "MCC_TEMP1" 3
-scoreboard players operation * "MCC_TEMP0" *= @a "MCC_TEMP1"
-scoreboard players operation * "coins" += @a "MCC_TEMP0"
-```
+### Preprocessor
+It offers a full dynamic preprocessor with full support for coordinates and selectors. The preprocessor's goal is to minimize repeated code by giving access to compile-time loops, conditionals, macros, constants, and anything else you can think of. Macros allow parameterized sets of commands to be pasted anywhere you want, and loops allow the adding of many commands at once that use slightly different arguments. If you've ever found yourself copy-pasting or changing many commands before, then the preprocessor is the solution.
 
-## what does it have?
-Variables, custom data structures, decimal numbers, if statements, loops, and a complete preprocessor which allows easy duplication of commands.
+### Raw-Text
+Built in resolvers will automatically construct raw-text out of strings similarly to how string interpolation works in mainstream languages. Inserting variables and selectors is as easy as wrapping them in {brackets} inside the string. Want to insert the name of the player? Hey what's up {@s}? What about a variable value? {value} is all you need.
 
-## what is definitions.def?
-The definitions file is a massive collection of constants which are specific to the latest Minecraft version. You can use any of them in the language at any time, making code extremely readable. Need the ID to red wool? No need to look it up, just type `[wool: RED]`! It also works with chat color codes, like `[color: red, bold]`
+### Selectors/Selection
+Selection is a new concept introduced in MCCompiled to allow you to run commands under the same entity without having to re-type the selector. `select @a[lm=10]` would then make all proceeding commands be run under all players that have more than 10 levels. So that's different, but selectors... work pretty much the same. MCCompiled features a full selector parser to allow more advanced logic, and even the ability to merge selectors together. You can store selectors in preprocessor variables and re-use them anywhere in the code as well.
 
-## is Java Edition support coming?
-There will not be any java edition support in the future, since writing functions for it is a little more bearable and the generated code would be extremely inefficient.
+### Logic
+If-statements now exist. They act as a compact and user friendly way to specify selectors and branch out logic. If statements with more than one command inside are automatically compressed down into their own function file, so logic is extremely performant and well structured. This is possible with normal Minecraft commands, but it's tedious. The selector engine also allows else-statements. This theme of simple-but-powerful is present throughout the entire language.
 
-## long term support
-As long as I remain in a position where this is advantagous to my work, MCCompiled is staying. (probably after that too but idk)
+### Variables
+Variables are the smartest part of the language. You can define variables with a multitude of unique types, all of which have custom ways of displaying to raw-text and being represented under the hood. Variables have their own fixed-point decimal implementation and additionally support booleans or time representations. Still following? Variables allow multiple operations per statement and automatically manage temporary scoreboards.
+
+### Functions
+Functions allow the creating of extra function files, but with an extra catch; they actually work like functions. Functions have input parameters and return values implemented at compile time, unlocking 1000x power with the least amount of code \[citation needed\].
+
+### Structs
+Ever wanted to have custom data structures? MCCompiled supports those too. You can define custom structure types and use them as variables, for whatever that might be used for. They also support being sent out to raw-text, so it's automatically awesome.
+
+### MCStructure Generation
+Make use of the custom NBT implementation and use some of the special new commands that extend Minecraft's systems by generating structures and using their load parameters. You can /give named and enchanted items as well as randomly scatter blocks throughout an area, similarly to fill. (more of these are to come)
+
+# Sold?
+MCCompiled is set to release March 1st, 2022 once I finish the stress testing phase, so be on the lookout for that. Check out the wiki cheat sheet for a full display of the language features.
