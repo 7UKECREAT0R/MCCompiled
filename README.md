@@ -36,4 +36,4 @@ Make use of the custom NBT implementation and use some of the special new comman
 MCCompiled is shipped with a [definitions.def](https://github.com/7UKECREAT0R/MCCompiledSource/blob/master/mc-compiled/definitions.def) file which is a massive library of organized aliases for inserting strings. One of my favorite parts of this file is that it has all text colors defined under normalized names. Rather than having to type `§6` you can just type `[color: gold]`. Give the file a look over to understand why it's so useful.
 
 # Sold?
-MCCompiled is set to release March 1st, 2022 once I finish the stress testing phase, so be on the lookout for that. Check out the [wiki's cheat sheet](https://github.com/7UKECREAT0R/MCCompiled/wiki/Cheat-Sheet) for a full display of the language features.
+Grab a pre-compiled copy over on the [releases page](https://github.com/7UKECREAT0R/MCCompiled/releases), or compile it yourself from [source](https://github.com/7UKECREAT0R/MCCompiledSource)! MCCompiled is completely free and will always stay that way.
