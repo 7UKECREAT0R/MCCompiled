@@ -9,7 +9,7 @@ Programming language which is "compiled" down to a Minecraft Bedrock Edition beh
 MCCompiled is an open source programming lanaguge designed for everyone who mods Minecraft. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. It differs from Minecraft Commands for a multitude of reasons, but the main reason is the reach of code. MCCompiled tries to push forward and strengthen the command community to make even more awesome things! ❤
 
 # Features
-Okay, but what's so special about it? The language is similar to that of javascript, using blocks and different code styles to construct unique and difficult-to-write Minecraft commands with ease.
+It's difficult to learn a new programming language, and there needs to be a sound reason to do it. Take a look at a couple of the features available in MCC and take the plunge! ↓ ↓ ↓
 
 ### Preprocessor
 It offers a full dynamic preprocessor with full support for coordinates and selectors. The preprocessor's goal is to minimize repeated code by giving access to compile-time loops, conditionals, macros, constants, and anything else you can think of. Macros allow parameterized sets of commands to be pasted anywhere you want, and loops allow the adding of many commands at once that use slightly different arguments. If you've ever found yourself copy-pasting or changing many commands before, then the preprocessor is the solution.
