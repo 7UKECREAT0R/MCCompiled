@@ -1,5 +1,7 @@
-// A function for determining absolute value.
-// Note that the return values aren't actually printed, this is just an example.
+/*
+    A function for determining absolute value.
+    Note that the return values aren't actually printed, this is just an example.
+*/
 
 function abs(int number) {
     if number < 0
