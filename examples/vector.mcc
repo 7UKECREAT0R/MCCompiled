@@ -1,0 +1,29 @@
+/*
+    Using a struct to represent a 3D vector
+    Uses 2-point precision numbers, like: 12.34
+*/
+
+struct vec3 {
+    decimal 2 x
+    decimal 2 y
+    decimal 2 z
+}
+
+define vec3 position
+define vec3 forward
+
+// Set position's components.
+position:x = 1.85
+position:y = 4.19
+position:z = 19.10
+
+// Set forward's components. Facing towards X.
+forward:x = 1
+forward:y = 0
+forward:z = 0
+
+// Define the distance that position will travel.
+define decimal 2 distance = 3.5
+
+// Move 3.5 units in the direction forward is pointing.
+position += forward * distance
