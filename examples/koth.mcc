@@ -1,0 +1,44 @@
+/*
+    Makes a rudimentary King of the Hill mode.
+    '/function tick' needs to be run every tick.
+*/
+
+define bool kothRunning
+define time kothDuration
+define int kothPoints
+$var location 0 100 0
+
+function @a stopKOTH {
+	kothRunning = false
+	kothDuration = 0s
+	kothPoints = 0
+	print "[color: bold]KOTH has ended."
+}
+
+function @a startKOTH {
+	kothRunning = true
+	kothDuration = 5m
+	actionbar times 0 1s 0
+	print "[color: green]KOTH HAS BEGUN!"
+}
+
+function displayKOTH {
+	actionbar "{kothDuration} Remaining   [color: green]{kothPoints} Points"
+}
+
+function tick {
+	select @a
+	if kothRunning {
+		kothDuration -= 1
+		
+		displayKOTH()
+		
+		if kothDuration % 10 == 0 & near $location 5
+			kothPoints += 1
+		
+		if kothDuration <= 0
+			stopKOTH()
+	}
+}
+
+
