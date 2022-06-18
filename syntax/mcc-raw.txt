@@ -1,0 +1,33 @@
+# MCC Raw Syntax (version 1.04)
+# This is a comment. Ignore empty lines.
+# Multi-word keywords are surrounded with <<double angle brackets>>.
+
+extension=mcc
+ignoreCase=True
+commentFolding=True
+compactFolding=False
+
+blockOpen={
+blockClose=}
+selectorOpen=[
+selectorClose=]
+string="
+escape=\
+
+numberPrefixes=~ ^ ! ..
+numberSuffixes=h m s t
+rangeOperator=..
+
+lineComment=//
+openComment=/*
+closeComment=*/
+
+operators=< > { } = ( ) + - * / % !
+selectors=@e @a @s @p
+preprocessor=$var $inc $dec $add $sub $mul $div $mod $pow $swap $if $else $repeat $log $macro $include $strfriendly $strupper $strlower $sum $median $mean $iterate $get $len $json
+commands=mc select globalprint print define init if else give tp tphere move face facehere rotate block fill scatter replace kill remove clear globaltitle title globalactionbar actionbar say halt damage effect effecth null tag limit explode feature function return struct for
+literals=true false & ~ ^
+types=int decimal bool time struct function $macro
+comparisons=block type family mode near inside not level name <<rotation x>> <<rotation y>> any count item holding offset null class position <<position x>> <<position y>> <<position z>>
+options=nulls gametest exploders uninstall identify up down left right forward backward survival creative adventure times subtitle destroy replace hollow outline keep lockinventory lockslot canplaceon: candestroy: enchant: name: lore: author: title: page: dye:
+
