@@ -1,0 +1,65 @@
+<NotepadPlus>
+	<UserLang name="MCCompiled" ext="mcc" udlVersion="2.1">
+		<Settings>
+			<Global caseIgnored="yes" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+			<Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+		</Settings>
+		<KeywordLists>
+			<Keywords name="Comments">00// 01 02 03/* 04*/</Keywords>
+			<Keywords name="Numbers, prefix1">~ ^ ! ..</Keywords>
+			<Keywords name="Numbers, prefix2"></Keywords>
+			<Keywords name="Numbers, extras1"></Keywords>
+			<Keywords name="Numbers, extras2"></Keywords>
+			<Keywords name="Numbers, suffix1">h m s t</Keywords>
+			<Keywords name="Numbers, suffix2"></Keywords>
+			<Keywords name="Numbers, range">..</Keywords>
+			<Keywords name="Operators1">&lt; &gt; { } = ( ) + - * / % !</Keywords>
+			<Keywords name="Operators2"></Keywords>
+			<Keywords name="Folders in code1, open">{</Keywords>
+			<Keywords name="Folders in code1, middle"></Keywords>
+			<Keywords name="Folders in code1, close">}</Keywords>
+			<Keywords name="Folders in code2, open"></Keywords>
+			<Keywords name="Folders in code2, middle"></Keywords>
+			<Keywords name="Folders in code2, close"></Keywords>
+			<Keywords name="Folders in comment, open"></Keywords>
+			<Keywords name="Folders in comment, middle"></Keywords>
+			<Keywords name="Folders in comment, close"></Keywords>
+			<Keywords name="Keywords1">@e @a @s @p</Keywords>
+			<Keywords name="Keywords2">$var $inc $dec $add $sub $mul $div $mod $pow $swap $if $else $repeat $log $macro $include $strfriendly $strupper $strlower $sum $median $mean $iterate $get $len $json</Keywords>
+			<Keywords name="Keywords3">mc select globalprint print define init if else give tp tphere move face facehere rotate block fill scatter replace kill remove clear globaltitle title globalactionbar actionbar say halt damage effect effecth null tag limit explode feature function return struct for</Keywords>
+			<Keywords name="Keywords4">true false &amp; ~ ^</Keywords>
+			<Keywords name="Keywords5">int decimal bool time struct function $macro</Keywords>
+			<Keywords name="Keywords6">block type family mode near inside not level name &apos;rotation x&apos; &apos;rotation y&apos; any count item holding offset null class position &apos;position x&apos; &apos;position y&apos; &apos;position z&apos;</Keywords>
+			<Keywords name="Keywords7">nulls gametest exploders uninstall identify up down left right forward backward survival creative adventure times subtitle destroy replace hollow outline keep lockinventory lockslot canplaceon: candestroy: enchant: name: lore: author: title: page: dye:</Keywords>
+			<Keywords name="Keywords8"></Keywords>
+			<Keywords name="Delimiters">00&quot; 01\ 02((&quot; EOL)) 03[ 04 05((] EOL)) 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+		</KeywordLists>
+		<Styles>
+			<WordsStyle name="DEFAULT" fgColor="FFFFFF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="COMMENTS" fgColor="3E8C42" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="LINE COMMENTS" fgColor="3E8C42" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="NUMBERS" fgColor="E0C1FF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS1" fgColor="FF4F4F" bgColor="FFFFFF" fontName="Consolas" fontStyle="1" nesting="0" />
+			<WordsStyle name="KEYWORDS2" fgColor="0BA4DD" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS3" fgColor="EE5BAF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS4" fgColor="E0C1FF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS5" fgColor="FF8080" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS6" fgColor="FF5F42" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS7" fgColor="D7AEFF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="OPERATORS" fgColor="E0C1FF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="FOLDER IN CODE1" fgColor="00FF40" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="KEYWORDS7" fgColor="D7AEFF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS1" fgColor="DDB3FF" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS2" fgColor="C0C0C0" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+			<WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="Consolas" fontStyle="0" nesting="0" />
+		</Styles>
+	</UserLang>
+</NotepadPlus>
