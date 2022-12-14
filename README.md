@@ -1,11 +1,15 @@
 ![logo-banner](https://user-images.githubusercontent.com/43343249/156271242-48851b88-915f-4229-8b60-0823041594b9.png)
 Programming language which is "compiled" down to a Minecraft Bedrock Edition behavior pack.
 
-### Useful Links
+
+# Useful Links
 [`📜 Source Code`](https://github.com/7UKECREAT0R/MCCompiledSource) | view the source code!<br />
 [`🌐 Wiki`](https://github.com/7UKECREAT0R/MCCompiled/wiki) | learn about the language and how to use it.<br />
 [`🗣️ Discord`](https://discord.gg/Jd4UCueKA8) | share ideas, show off work, and report bugs!<br />
 [`🖥️ IDE`](https://7ukecreat0r.github.io/mccompiled/editor.html) | editor with keyword info, error detection, and compilation.<br />
+
+# Update on 1.1
+I am still actively working on the 1.1 release, and devlog entries are steady coming out in the Discord. There are a lot of breaking changes incoming, so you might consider holding off until then.
 
 # About
 MCCompiled is an open source programming lanaguge designed for everyone who writes Minecraft commands. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. There's a constantly expanding, absolutely monolithic, widely spanning feature-set that is completely open source and free for anyone to use for any purpose! ❤
