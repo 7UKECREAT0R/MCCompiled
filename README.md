@@ -1,5 +1,5 @@
 ![logo-banner](https://user-images.githubusercontent.com/43343249/156271242-48851b88-915f-4229-8b60-0823041594b9.png)
-A production-ready feature-rich compiler which compiles to Minecraft Bedrock Edition commands. Outputs as a behavior/resource pack with extended support for mcstructures and entities. **1.1 is soon to release.**
+A production-ready feature-rich programming language which compiles to Minecraft Bedrock Edition commands. Outputs as a behavior/resource pack with extended support for mcstructures and entities. **1.1 is soon to release.**
 
 
 # Useful Links
