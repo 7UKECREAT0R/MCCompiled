@@ -1,5 +1,0 @@
-// Finds if three or more players are in a radius.
-
-if count @a[r=10] 3 {
-    actionbar "[color: cyan]Near 2+ teammates!"
-}
