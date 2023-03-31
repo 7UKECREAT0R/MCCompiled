@@ -1,16 +1,11 @@
-![logo-banner](https://user-images.githubusercontent.com/43343249/156271242-48851b88-915f-4229-8b60-0823041594b9.png)
-A production-ready feature-rich programming language which compiles to Minecraft Bedrock Edition commands. Outputs as a behavior/resource pack with extended support for mcstructures and entities. **1.1 is soon to release.**
+![banner-meta](https://user-images.githubusercontent.com/43343249/228995662-70182739-5a3d-4b16-b6d2-086570bdd51a.png)
 
-
-# Useful Links
+# [Download Installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/MCCompiled%20Installer.zip)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W6JMNO1)<br />
 [`📜 Source Code`](https://github.com/7UKECREAT0R/MCCompiledSource) | view the source code!<br />
 [`🌐 Wiki`](https://github.com/7UKECREAT0R/MCCompiled/wiki) | learn about the language and how to use it.<br />
 [`🗣️ Discord`](https://discord.gg/Jd4UCueKA8) | share ideas, show off work, and report bugs!<br />
 [`🖥️ IDE`](https://7ukecreat0r.github.io/mccompiled/editor.html) | editor with keyword info, error detection, and compilation.<br />
-
-# **IMPORTANT:** Notice on the 1.1 Update
-I am still actively working on the 1.1 update, and devlog entries are steady coming out in the Discord. There are a lot of breaking changes incoming, so you might consider holding off learning how to use MCCompiled until then. I want to make the best product humanly possible with the time I have, and the improvements 1.1 will bring are insurmountable!
 
 # About
 MCCompiled is an open source programming lanaguge designed for anyone and everyone who writes Minecraft commands. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. There's a constantly expanding, monolithic, widely spanning feature-set that is completely open source and free for anyone to use for any purpose! ❤
@@ -40,9 +35,9 @@ Make use of the custom NBT implementation and use some of the special new comman
 MCCompiled is shipped with a [definitions.def](https://github.com/7UKECREAT0R/MCCompiledSource/blob/master/mc-compiled/definitions.def) file which is a massive library of organized aliases for inserting strings. One of my favorite parts of this file is that it has all text colors defined under normalized names. Rather than having to type `§6` you can just type `[color: gold]`. Give the file a look over to understand why it's so useful.
 
 ### IDE
-Use MCCompiled's completely web-based IDE to build, error check, and autocomplete your way through your toughest projects. Save and load files natively, along with keyword information and a big "COMPILE" button to immediately put your results into Minecraft's development_x_packs directory. [Try it now!](https://7ukecreat0r.github.io/mccompiled/editor.html)
+Use MCCompiled's completely web-based IDE to build, error check, and autocomplete your way through your toughest projects. Save and load files natively, along with keyword information and a big "COMPILE" button to immediately put your results into Minecraft's development packs directory. [Try it now!](https://7ukecreat0r.github.io/mccompiled/editor.html)
 
 > Note: The IDE's features are limited without the MCCompiled language server running on your system.
 
 # Sold?
-Grab a pre-compiled copy over on the [releases page](https://github.com/7UKECREAT0R/MCCompiled/releases), or compile it yourself from [source](https://github.com/7UKECREAT0R/MCCompiledSource)! MCCompiled is completely free and will always stay that way.
+Grab the [installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/MCCompiled%20Installer.zip) to automatically download, install, and update to the latest version. MCCompiled is completely free and will always stay that way.
