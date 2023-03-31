@@ -3,6 +3,7 @@
 # [Download Installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/mc-compiled-installer.zip)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W6JMNO1)<br />
 [`📜 Source Code`](https://github.com/7UKECREAT0R/MCCompiledSource) | view the source code!<br />
+[`📦 Releases`](https://github.com/7UKECREAT0R/MCCompiled/releases) | all of the raw pre-compiled binaries of the software. consider using the [installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/mc-compiled-installer.zip)<br />
 [`🌐 Wiki`](https://github.com/7UKECREAT0R/MCCompiled/wiki) | learn about the language and how to use it.<br />
 [`🗣️ Discord`](https://discord.gg/Jd4UCueKA8) | share ideas, show off work, and report bugs!<br />
 [`🖥️ IDE`](https://7ukecreat0r.github.io/mccompiled/editor.html) | editor with keyword info, error detection, and compilation.<br />
@@ -40,4 +41,4 @@ Use MCCompiled's completely web-based IDE to build, error check, and autocomplet
 > Note: The IDE's features are limited without the MCCompiled language server running on your system.
 
 # Sold?
-Grab the [installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/mc-compiled-installer.zip) to automatically download, install, and update to the latest version. MCCompiled is completely free and will always stay that way. Want to install manually? Head to the [releases] page!
+Grab the [installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/mc-compiled-installer.zip) to automatically download, install, and update to the latest version. MCCompiled is completely free and will always stay that way. Want to install manually? Head to the [releases](https://github.com/7UKECREAT0R/MCCompiled/releases) page!
