@@ -32,6 +32,9 @@ Functions allow the creating of extra function files, but with a catch; they act
 ### MCStructure Generation
 Make use of the custom NBT implementation and use some of the special new commands that extend Minecraft's systems by generating structures and using their load parameters. You can /give named and enchanted items as well as randomly scatter blocks throughout an area, similarly to fill. More of these are to come.
 
+### Entity Generation
+Enable built in extended language features that utilize fully custom entity generation. Create and manage dummy entities, spawn explosions, and more to come soon!
+
 ### IDE
 Use MCCompiled's completely web-based IDE to build, error check, and autocomplete your way through your toughest projects. Save and load files natively, along with keyword information and a big "COMPILE" button to immediately put your results into Minecraft's development packs directory. [Try it now!](https://7ukecreat0r.github.io/mccompiled/editor.html)
 
