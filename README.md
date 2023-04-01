@@ -32,9 +32,6 @@ Functions allow the creating of extra function files, but with a catch; they act
 ### MCStructure Generation
 Make use of the custom NBT implementation and use some of the special new commands that extend Minecraft's systems by generating structures and using their load parameters. You can /give named and enchanted items as well as randomly scatter blocks throughout an area, similarly to fill. More of these are to come.
 
-### Definitions
-MCCompiled is shipped with a [definitions.def](https://github.com/7UKECREAT0R/MCCompiledSource/blob/master/mc-compiled/definitions.def) file which is a massive library of organized aliases for inserting strings. One of my favorite parts of this file is that it has all text colors defined under normalized names. Rather than having to type `§6` you can just type `[color: gold]`. Give the file a look over to understand why it's so useful.
-
 ### IDE
 Use MCCompiled's completely web-based IDE to build, error check, and autocomplete your way through your toughest projects. Save and load files natively, along with keyword information and a big "COMPILE" button to immediately put your results into Minecraft's development packs directory. [Try it now!](https://7ukecreat0r.github.io/mccompiled/editor.html)
 
