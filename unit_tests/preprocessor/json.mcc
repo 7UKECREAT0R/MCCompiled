@@ -1,0 +1,26 @@
+// $meta-start
+// $meta e30=
+// Unit Test: Parsing and using JSON data.
+$json "resources/data.json" data
+
+// Show the strings of text in these places:
+$log $data['text']
+$log $data["nest"]["egg"]['yolk']["protein"]['key']
+
+
+// Process key locations in the file:
+$var keyLocations $data["key_locations"]
+
+$iterate keyLocations location {
+    function "warp_" + $location["name"] {
+        tp @s $location["location"]
+        print @s "[color:green, bold]Warped to {$location['name']}"
+    }
+}
+
+// Create a help file:
+function list_warps {
+    print "[color: bold]ALL WARPS:"
+    $iterate keyLocations location
+        print "    /function warp_{$location['name']}"
+}

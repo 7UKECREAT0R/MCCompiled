@@ -1,0 +1,32 @@
+{
+    "text": "This is example text from a JSON file.",
+    
+    "nest": {
+        "egg": {
+            "yolk": {
+                "protein": {
+                    "key": "Wow this is a secret key!"
+                }
+            }
+        }
+    },
+
+    "key_locations": [
+        {
+            "name": "hub",
+            "location": [0, 100, 0]
+        },
+        {
+            "name": "kitpvp",
+            "location": [320, 50, 205]
+        },
+        {
+            "name": "sandbox",
+            "location": [-409, 50, 108]
+        },
+        {
+            "name": "skywars",
+            "location": [-850, 10, 500]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+// $meta-start
+// $meta e30=
+// Unit Test: $repeat Directive Variants
+
+// Basic count up.
+$repeat 5
+    $log "This should be said five times."
+
+// Count down from 10.
+$repeat 10 index
+    $log "Countdown: " + (10 - $index)
+
+// Range repeat.
+$repeat 12..17 index
+    $log "Tweleve through seventeen inclusive: $index"

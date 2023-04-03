@@ -1,0 +1,12 @@
+// $meta-start
+// $meta e30=
+// Unit Test: String Manipulation
+$var testString "MCCompiled is a compiler for Minecraft Commands."
+
+$log "Baseline: $testString"
+$strupper testString
+$log "Uppercase: $testString"
+$strlower testString
+$log "Lowercase: $testString"
+$strfriendly testString
+$log "Friendcase: $testString"

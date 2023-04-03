@@ -1,0 +1,23 @@
+// $meta-start
+// $meta e30=
+// Unit Test: Data Manipulation
+
+$var data 8, 20, 35, 12, 43, -2
+$log "Base Data: $data"
+
+$sort descending data
+$log "Sorted Data (descending): $data"
+$reverse data
+$log "Sorted Data (ascending): $data"
+
+$sum dataSum data
+$log "Data Sum: $dataSum"
+
+$median dataMedian data
+$log "Data Median: $dataMedian"
+
+$mean dataMean data
+$log "Data Mean: $dataMean"
+
+$len dataLength data
+$log "Data Length: $dataLength"

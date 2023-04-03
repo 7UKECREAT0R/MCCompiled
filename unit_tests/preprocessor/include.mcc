@@ -1,0 +1,9 @@
+// $meta-start
+// $meta e30=
+// Unit Test: $include Directive
+
+// Include the file, which should process the code inside it.
+$include "resources/avg.mcc"
+
+// Test the avg function from the included file.
+print "This should be twenty: {avg(10, 30)}"

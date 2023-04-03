@@ -1,0 +1,33 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// Unit Test: Advanced/Impractical Time Formatting
+
+define time testTime = 65m + 12s
+
+$var _timeformat "m:ss"
+print "Test 00: 65:12 == {testTime}"
+
+$var _timeformat "mmm:sss"
+print "Test 01: 065:012 == {testTime}"
+
+$var _timeformat "mmm:s"
+print "Test 02: 065:12 == {testTime}"
+
+$var _timeformat "h:mm:ss"
+print "Test 03: 1:05:12 == {testTime}"
+
+$var _timeformat "hh:mmm:s"
+print "Test 04: 01:005:12 == {testTime}"
+
+$var _timeformat "sssss"
+print "Test 05: 03912 == {testTime}"
+
+$var _timeformat "m"
+print "Test 06: 65 == {testTime}"
+
+$var _timeformat "h"
+print "Test 07: 1 == {testTime}"
+
+$var _timeformat "h:m"
+print "Test 08: 1:5 == {testTime}"
+

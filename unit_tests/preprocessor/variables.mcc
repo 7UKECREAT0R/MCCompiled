@@ -1,0 +1,98 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// Unit Test: Preprocessor Operations and Comparisons
+$var testVariable 20 ~10 ^5
+
+$inc testVariable
+$inc testVariable
+$inc testVariable
+
+$dec testVariable
+
+$log "---------------- BEGIN TEST ----------------"
+$log "    SECTION 1: MATH DIRECTIVES"
+$log "RESULT: $testVariable"
+$log "EXPECT: 22 ~12 ^7"
+
+$log ""
+
+$add testVariable 10 10 10
+$log "RESULT: $testVariable"
+$log "EXPECT: 32 ~22 ^17"
+
+$log ""
+
+$sub testVariable 2 2 2
+$log "RESULT: $testVariable"
+$log "EXPECT: 30 ~20 ^15"
+
+$log ""
+
+$mul testVariable 3 3 3
+$log "RESULT: $testVariable"
+$log "EXPECT: 90 ~60 ^45"
+
+$log ""
+
+$div testVariable 2 2 2
+$log "RESULT: $testVariable"
+$log "EXPECT: 45 ~30 ^22"
+
+$log ""
+
+$mod testVariable 10 10 10
+$log "RESULT: $testVariable"
+$log "EXPECT: 5 ~ ^2"
+
+$log ""
+
+$add testVariable 0 3 0
+$pow testVariable 2 2 2
+$log "RESULT: $testVariable"
+$log "EXPECT: 25 ~9 ^4"
+
+$log ""
+
+$var temporary 12 34 56
+$swap testVariable temporary
+$log "RESULT: $testVariable"
+$log "EXPECT: 12 34 56"
+
+$log ""
+$log "    SECTION 2: COMPARISON"
+
+$macro comparison_test {
+    $if testVariable > 10
+        $log "Number is greater than 10."
+    $else
+        $log "Number is less or equal to 10."
+
+    $if testVariable >= 10
+        $log "Number is greater or equal to 10."
+    $else
+        $log "Number is less than 10."
+
+    $if testVariable == 10
+        $log "Number is equal to 10."
+    $else
+        $log "Number is not equal to 10."
+}
+
+$var testVariable 11
+$log "BASELINE: $testVariable"
+$macro comparison_test
+
+$log ""
+
+$var testVariable 10
+$log "BASELINE: $testVariable"
+$macro comparison_test
+
+$log ""
+
+$var testVariable 9
+$log "BASELINE: $testVariable"
+$macro comparison_test
+
+$log ""
+$log "---------------- END TEST ----------------"

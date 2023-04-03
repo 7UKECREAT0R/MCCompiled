@@ -1,0 +1,19 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// The following does not work on MCCompiled 1.1
+// Should work on 1.11 or any version past the hotfix.
+
+define global time timeLeft
+
+function reset {
+    timeLeft = 1m + 30s
+}
+
+function tick {
+    timeLeft -= 1
+}
+
+function display {
+    execute as @a
+        print "{timeLeft}"
+}
