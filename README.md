@@ -6,7 +6,7 @@
 [`📦 Releases`](https://github.com/7UKECREAT0R/MCCompiled/releases) | all of the raw pre-compiled binaries of the software. consider using the [installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/mc-compiled-installer.zip)<br />
 [`🌐 Wiki`](https://github.com/7UKECREAT0R/MCCompiled/wiki) | learn about the language and how to use it.<br />
 [`🗣️ Discord`](https://discord.gg/Jd4UCueKA8) | share ideas, show off work, and report bugs!<br />
-[`🖥️ IDE`](https://7ukecreat0r.github.io/mccompiled/editor.html) | editor with keyword info, error detection, and compilation.<br />
+[`🖥️ IDE`](https://lukecreator.dev/mccompiled/editor.html) | editor with keyword info, error detection, and compilation.<br />
 
 # About
 MCCompiled is an open source programming lanaguge designed for anyone and everyone who writes Minecraft commands. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. There's a constantly expanding, monolithic, widely spanning feature-set that is completely open source and free for anyone to use for any purpose! ❤
