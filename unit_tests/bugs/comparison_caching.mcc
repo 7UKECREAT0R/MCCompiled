@@ -1,0 +1,15 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// The following code does not run even if there are cows in the world. This has been remedied for versions 1.12+
+if any @e[type=cow] {
+    print "Found a cow in the world!"
+    print "Exterminating..."
+
+    execute as @e[type=cow] at @s {
+        say "NOOO!"
+        kill
+    }
+}
+else {
+    print "No cows found... yet."
+}

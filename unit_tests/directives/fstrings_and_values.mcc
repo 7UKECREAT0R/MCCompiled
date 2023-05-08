@@ -1,0 +1,20 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+define int totalPoints
+define bool isGameRunning
+define time timeAlive
+
+function reset {
+    totalPoints = 0
+    isGameRunning = true
+    timeAlive = 0s
+}
+
+$var _timeformat "mm:ss"
+
+function displayStats {
+    if isGameRunning
+        actionbar "SCORE: {totalPoints} | TIME: {timeAlive}"
+    else
+        actionbar "<PAUSED>"
+}

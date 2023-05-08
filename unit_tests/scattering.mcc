@@ -1,0 +1,9 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+$var size 10
+
+$var sizeI $size * -1
+$var coords (~ + $sizeI) ~ (~ + $sizeI) (~ + $size) ~ (~ + $size)
+
+fill stone $coords
+scatter diamond_ore 35 $coords

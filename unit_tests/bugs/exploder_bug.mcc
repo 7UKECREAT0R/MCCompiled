@@ -1,0 +1,14 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// This bug occurs during linting, due to an overly aggressive optimization introduced in 1.1. This issue has been fixed in versions 1.12+
+feature exploders
+
+define bool alive
+
+function explodeAllPlayers {
+    for @a {
+        if alive {
+            explode ~ ~ ~ 4 0 false false
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// This fails to compile on line 3 in MCCompiled 1.1 and 1.11 due to an issue with the if-statement trying to dereference by name (aliased). This issue has been remedied in 1.12+
+function abs int number {
+    if number < 0
+        number *= -1
+    return number
+}
+
+print "{abs(-4)}"
+print "{abs(-100)}"
+print "{abs(2)}"
+print "{abs(927)}"
+print "{abs(-1)}"

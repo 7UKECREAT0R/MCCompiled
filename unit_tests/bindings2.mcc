@@ -1,0 +1,9 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+define bind("query.is_on_ground", "player", "cow") bool onGround
+
+function display {
+    $var _true "[color:green]On Ground!"
+    $var _false "[color:red]Not On Ground."
+    actionbar "{onGround}"
+}

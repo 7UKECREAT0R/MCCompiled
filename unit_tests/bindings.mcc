@@ -1,0 +1,11 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+define bind("query.health") int hp
+define bind("query.is_jumping") bool jumping
+
+function display {
+    $var _true "Jumping!"
+    $var _false "Not Jumping."
+
+    actionbar "{hp} / 20 --- Jumping?: {jumping}"
+}  
