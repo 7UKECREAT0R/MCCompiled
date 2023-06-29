@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "MCCompiled 1.14 Project - Resources",
+    "name": "web_project",
+    "uuid": "8e7ae2b3-652d-4609-b22f-a3cccf8b59b0",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      81
+    ]
+  },
+  "dependencies": [
+    {
+      "uuid": "e9db9216-fa04-4276-969c-2053c22a50b2",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "description": "web_project Resources",
+      "type": "resources",
+      "uuid": "3ca01300-7fdb-4fff-b057-1744ba81dfe5",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

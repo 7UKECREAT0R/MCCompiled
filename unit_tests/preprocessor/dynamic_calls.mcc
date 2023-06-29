@@ -1,0 +1,18 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+$var PLOT_AMOUNT 100
+
+$repeat $PLOT_AMOUNT plot {
+    function folder("teleports") "teleportToPlot$plot" {
+        tp 0 100 ($plot * 125)
+    }
+}
+
+function gotoPlot(int plotNumber) {
+    $repeat $PLOT_AMOUNT check {
+        if plotNumber == $check
+            $call "teleportToPlot$check"
+    }
+}
+
+gotoPlot(15)

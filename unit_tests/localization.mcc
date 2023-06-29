@@ -1,0 +1,23 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+lang en_US
+
+// enable lang merging (default)
+$var _lang_merge true
+
+define int bound = 25
+define int num = 30
+define bool b1 = true
+define bool b2 = false
+
+print "This text is in English!"
+print "The num value is equal to {num}."
+
+print "Is {num} greater than 25?"
+
+if num > bound
+    print "[color: green]Yes!   {num} is greater than {bound}."
+else
+    print "[color: red]No.   {num} is less or equal to {bound}."
+
+print "Booleans include {b1} and {b2}!"

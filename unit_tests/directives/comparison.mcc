@@ -1,0 +1,79 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+/*
+    This file runs a series of tests on all of the overloads of if-statements.
+    All comparisons should show only one result, and they should be correct.
+*/
+
+define bool canPass = true
+
+define global MIN_AGE = 18
+define int age = 17
+
+// checks if the player can pass
+function checkPass {
+    print "[color: bold]canPass == {canPass}."
+    if canPass {
+        print "[color: green]You are allowed to pass!"
+    } else {
+        print "[color: red]You shall not pass!"
+    }
+}
+
+// checks if the player is of age
+function checkAge {
+    print "[color: bold]age == {age}. Minimum age is {MIN_AGE}."
+
+    if age >= MIN_AGE
+        // This comment is to try and trip up the compiler
+        print "[color: green]You are legal! Wow!"
+    else
+        // Ballocks
+        print "[color: red]You are not legal."
+}
+
+checkPass()
+canPass = false
+checkPass()
+
+print ""
+
+checkAge()
+age += 1
+checkAge()
+age += 1
+checkAge()
+
+print ""
+print "--- Section 2: Selectors ---"
+print ""
+
+if @s[m=creative]
+    print "You are in creative mode."
+else
+    // haha trippin you up
+    // whats up compiler
+    // cool comment
+    print "You are not in creative mode."
+
+
+if count @e[type=cow] > 3 {
+    print "[color: gold]There are more than three cows."
+    // comment test
+} else {
+    // wow
+    print "[color: red]There are less than four cows."
+
+    if any @e[type=cow]
+        print "[color: red]However, there is a cow in the world."
+    else
+        print "[color: red]In fact, there are no cows at all."
+}
+
+if block ~ ~-1 ~ grass {
+    print "[color: green]You are standing on grass!"
+} else {
+    print "[color: gray]You are not standing on grass."
+}
+
+print "--- Unit Test Complete ---"

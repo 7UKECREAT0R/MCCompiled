@@ -1,0 +1,5 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+function islands.social.goto {
+    print "Going to the Social island..."
+}

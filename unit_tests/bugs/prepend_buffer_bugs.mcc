@@ -1,0 +1,12 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+function math.abs int number {
+    if number < 0
+        return number * -1
+    else
+        return number
+}
+
+print "Testing absolute value: {math.abs(-40)}"
+print "Testing absolute value: {math.abs(-1)}"
+print "Testing absolute value: {math.abs(124)}"
