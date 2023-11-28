@@ -8,7 +8,7 @@
 [`🖥️ IDE`](https://lukecreator.dev/mccompiled/editor.html) | editor with keyword info, error detection, and compilation.<br />
 
 # About
-MCCompiled is an open source programming lanaguge designed for anyone and everyone who writes Minecraft commands. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. There's an always-improving widely-spanning feature set that is completely open source and free for anyone to use for any purpose! ❤
+MCCompiled is an open source programming language designed for anyone and everyone who writes Minecraft commands. Its core mechanic is compiling down to a behavior pack based on a context-aware compiler. There's an always-improving widely-spanning feature set that is completely open source and free for anyone to use for any purpose! ❤
 
 # Features
 Changing up your workflow is hard. Take a look at the benefits of switching to MCCompiled and see if you're ready to take the plunge!:
