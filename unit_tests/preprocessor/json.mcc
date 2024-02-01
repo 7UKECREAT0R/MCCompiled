@@ -1,26 +1,30 @@
 // $meta-start
 // $meta e30=
+// $meta-props eyJkZWJ1ZyI6ImZhbHNlIiwiZGVjb3JhdGUiOiJ0cnVlIiwiZXhwb3J0X2FsbCI6InRydWUifQ==
+// $meta-end
 // Unit Test: Parsing and using JSON data.
 $json "resources/data.json" data
 
 // Show the strings of text in these places:
-$log $data['text']
-$log $data["nest"]["egg"]['yolk']["protein"]['key']
-
+$assert $data['text'] == "This is example text from a JSON file."
+$assert $data["nest"]["egg"]['yolk']["protein"]['key'] == 'Wow this is a secret key!'
 
 // Process key locations in the file:
 $var keyLocations $data["key_locations"]
 
-$iterate keyLocations location {
-    function "warp_" + $location["name"] {
+$assert $keyLocations[0]['name'] == "hub"
+$assert $keyLocations[0]['location'] == 0 100 0
+
+$iterate $keyLocations location {
+    function export "warp_" + $location["name"] {
         tp @s $location["location"]
         print @s "[color:green, bold]Warped to {$location['name']}"
     }
 }
 
-// Create a help file:
-function list_warps {
+// Lists all warps out: $keyLocations
+function export list_warps {
     print "[color: bold]ALL WARPS:"
-    $iterate keyLocations location
+    $iterate $keyLocations location
         print "    /function warp_{$location['name']}"
 }

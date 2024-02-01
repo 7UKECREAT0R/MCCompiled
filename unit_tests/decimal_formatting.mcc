@@ -1,0 +1,35 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
+define number = 4.15
+
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"
+number -= 0.01
+print "The number is {number}"

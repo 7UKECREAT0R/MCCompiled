@@ -1,0 +1,15 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
+// appending/prepending multiple values at once.
+$var colors "yellow" "green"
+$prepend colors "red" "orange"
+$append colors "blue" "purple"
+$assert colors == "red" "orange" "yellow" "green" "blue" "purple"
+
+// single values use a different implementation, so test those too
+$var values 2 3
+$prepend values 1
+$append values 4
+$assert values == 1 2 3 4

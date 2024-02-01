@@ -1,126 +1,76 @@
 // $meta-start
 // $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
+feature tests
+
 define global int globalValue
 define int localValue
 
-print "[color: bold]BEGINNING SUPER-STRESS-TEST 32 BIT GLOBAL EDITION!!!"
-
-print "" // break time
-
-print "1. Static Operations on Global"
-globalValue = 21
-globalValue += 10
-globalValue -= 5
-globalValue *= 7
-globalValue /= 2
-print "    a. {globalValue} should equal 91"
-globalValue %= 12
-print "    b. {globalValue} should equal 7"
-
-print "" // break time
-
-print "2. Cross Assignment with Global and Local"
-localValue = globalValue
-print "    a. {localValue} should equal {globalValue}"
-localValue = 42
-globalValue = localValue
-print "    b. {globalValue} should equal 42"
-
-print "" // break time
-
-print "3. Cross Operation with Global and Local"
-globalValue = 100
-localValue = 25
-globalValue += localValue
-localValue -= 10
-globalValue -= localValue
-localValue = 2
-globalValue *= localValue
-localValue *= 2
-globalValue /= localValue
-print "    a. {globalValue} should equal 55"
-localValue = 21
-globalValue %= localValue
-print "    b. {globalValue} should equal 13"
-globalValue >< localValue
-print "    c. {globalValue} should equal 21"
-print "    d. {localValue} should equal 13"
-localValue += globalValue
-globalValue = 3
-localValue -= globalValue
-globalValue = 10
-localValue *= globalValue
-globalValue = 8
-localValue /= globalValue
-print "    e. {localValue} should equal 38"
-localValue %= globalValue
-print "    f. {localValue} should equal 6"
-
-print "" // break time
-
-print "4. Static Comparisons on Global"
-globalValue = 100
-
-if globalValue > 60
-    print "{globalValue} > 60"
-else
-    print "{globalValue} <= 60"
-
-if globalValue < 60
-    print "{globalValue} < 60"
-else
-    print "{globalValue} >= 60"
-
-if globalValue <= 100
-    print "{globalValue} <= 100"
-else
-    print "{globalValue} > 100"
-
-if globalValue >= 100
-    print "{globalValue} >= 100"
-else
-    print "{globalValue} < 100"
-
-if globalValue == 100
-    print "{globalValue} == 100"
-else
-    print "{globalValue} != 100"
-
-if globalValue != 90
-    print "{globalValue} != 90"
-else
-    print "{globalValue} == 90"
-
-print "5. Cross Comparisons with Global and Local"
-globalValue = 10
-localValue = 4
-
-if globalValue > localValue
-    print "{globalValue} > {localValue}"
-else
-    print "{globalValue} <= {localValue}"
-
-if localValue < globalValue
-    print "{localValue} < {globalValue}"
-else
-    print "{localValue} >= {globalValue}"
-
-if globalValue >= localValue
-    print "{globalValue} >= {localValue}"
-else
-    print "{globalValue} < {localValue}"
-
-if localValue <= globalValue
-    print "{localValue} <= {globalValue}"
-else
-    print "{localValue} > {globalValue}"
-
-if globalValue == localValue
-    print "{globalValue} == {localValue}"
-else
-    print "{globalValue} != {localValue}"
-
-if localValue != globalValue
-    print "{localValue} != {globalValue}"
-else
-    print "{localValue} == {globalValue}"
+test staticOpsGlobal {
+    globalValue = 21
+    globalValue += 10
+    globalValue -= 5
+    globalValue *= 7
+    globalValue /= 2
+    assert globalValue == 91
+    globalValue %= 12
+    assert globalValue == 7
+}
+test crossAssignmentLocalGlobal {
+    localValue = globalValue
+    assert localValue == globalValue
+    localValue = 42
+    globalValue = localValue
+    assert globalValue == 42
+}
+test crossOperationLocalGlobal {
+    globalValue = 100
+    localValue = 25
+    globalValue += localValue
+    localValue -= 10
+    globalValue -= localValue
+    localValue = 2
+    globalValue *= localValue
+    localValue *= 2
+    globalValue /= localValue
+    assert globalValue == 55
+    localValue = 21
+    globalValue %= localValue
+    assert globalValue == 13
+    globalValue >< localValue
+    assert globalValue == 21
+    assert localValue == 13
+    localValue += globalValue
+    globalValue = 3
+    localValue -= globalValue
+    globalValue = 10
+    localValue *= globalValue
+    globalValue = 8
+    localValue /= globalValue
+    assert localValue == 38
+    localValue %= globalValue
+    assert localValue == 6
+}
+test staticComparisonsGlobal {
+    globalValue = 100
+    assert globalValue > 60
+    assert globalValue < 120
+    assert globalValue >= 100
+    assert globalValue <= 100
+    assert globalValue == 100
+    assert globalValue != 90
+}
+test crossComparisonsLocalGlobal {
+    globalValue = 10
+    localValue = 4
+    assert globalValue > localValue
+    assert localValue < globalValue
+    assert globalValue >= localValue
+    assert localValue <= globalValue
+    assert localValue != globalValue
+    assert globalValue != localValue
+    localValue = 10
+    assert localValue == globalValue
+    assert globalValue == localValue
+}

@@ -1,10 +1,14 @@
 // $meta-start
 // $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
+feature uninstall
+
 define int totalPoints
 define bool isGameRunning
 define time timeAlive
 
-function reset {
+function export reset {
     totalPoints = 0
     isGameRunning = true
     timeAlive = 0s
@@ -12,7 +16,7 @@ function reset {
 
 $var _timeformat "mm:ss"
 
-function displayStats {
+function export displayStats {
     if isGameRunning
         actionbar "SCORE: {totalPoints} | TIME: {timeAlive}"
     else

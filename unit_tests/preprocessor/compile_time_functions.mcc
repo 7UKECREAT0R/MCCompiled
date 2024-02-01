@@ -1,0 +1,34 @@
+// $meta-start
+// $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
+// Tests compile-time functions
+
+$var aValue 40.1
+$var bValue 56
+$var cValue 4.5
+
+// min/max
+$assert min($aValue, $bValue) == 40.1
+$assert max($aValue, $bValue) == 56
+$assert min($bValue, $aValue) == 40.1
+$assert max($bValue, $aValue) == 56
+
+// rounding
+$assert round($cValue) == 5
+$assert floor($cValue) == 4
+$assert ceiling($cValue) == 5
+$assert round($aValue) == 40
+$assert floor($aValue) == 40
+$assert ceiling($aValue) == 41
+
+// trig
+$assert sqrt($aValue) == 6.332456
+$assert sqrt($bValue) == 7.483315
+$assert sin($cValue) == -0.9775301
+$assert sin($aValue) == 0.674808
+$assert cos($aValue) == -0.7379934
+$assert cos($bValue) == 0.8532201
+$assert tan($aValue) == -0.9143822
+$assert tan($bValue) == -0.6112737
+$assert tan($cValue) == 4.637332

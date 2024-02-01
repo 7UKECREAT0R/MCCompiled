@@ -1,8 +1,10 @@
 // $meta-start
 // $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6InRydWUiLCJleHBvcnRfYWxsIjoiZmFsc2UifQ==
+// $meta-end
 define bind("query.is_on_ground", "player", "cow") bool onGround
 
-function display {
+function export display {
     $var _true "[color:green]On Ground!"
     $var _false "[color:red]Not On Ground."
     actionbar "{onGround}"

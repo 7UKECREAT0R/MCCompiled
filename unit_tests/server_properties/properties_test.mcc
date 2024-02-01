@@ -1,0 +1,5 @@
+// $meta-start
+// $meta e30=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6InRydWUiLCJleHBvcnRfYWxsIjoidHJ1ZSJ9
+// $meta-end
+print "Hello, user!"

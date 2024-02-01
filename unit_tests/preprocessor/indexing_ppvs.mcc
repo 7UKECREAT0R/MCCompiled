@@ -1,0 +1,9 @@
+// $meta-start
+// $meta e30=
+// $meta-props eyJkZWJ1ZyI6ImZhbHNlIiwiZGVjb3JhdGUiOiJ0cnVlIiwiZXhwb3J0X2FsbCI6InRydWUifQ==
+// $meta-end
+$var values "Jim" "Joe" "John"
+
+$assert values[1] == "Joe"
+$assert values[0] == "Jim"
+$assert values[2] == "John"

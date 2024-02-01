@@ -1,5 +1,7 @@
 // $meta-start
 // $meta e30=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
 // Unit Test: Data Manipulation
 
 $var data 8, 20, 35, 12, 43, -2
@@ -7,17 +9,22 @@ $log "Base Data: $data"
 
 $sort descending data
 $log "Sorted Data (descending): $data"
-$reverse data
+$assert data == 43, 35, 20, 12, 8, -2
+
+$sort ascending data
 $log "Sorted Data (ascending): $data"
+$assert data == -2, 8, 12, 20, 35, 43
+
+$assert data != 4
 
 $sum dataSum data
-$log "Data Sum: $dataSum"
+$assert dataSum == 116
 
 $median dataMedian data
-$log "Data Median: $dataMedian"
+$assert dataMedian == 16
 
 $mean dataMean data
-$log "Data Mean: $dataMean"
+$assert dataMean == 19
 
 $len dataLength data
-$log "Data Length: $dataLength"
+$assert dataLength == 6

@@ -1,5 +1,7 @@
 // $meta-start
 // $meta eyJwcm9qZWN0TmFtZSI6IndlYl9wcm9qZWN0In0=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
 /*
     This file runs a series of tests on all of the overloads of if-statements.
     All comparisons should show only one result, and they should be correct.
@@ -11,7 +13,7 @@ define global MIN_AGE = 18
 define int age = 17
 
 // checks if the player can pass
-function checkPass {
+function export checkPass {
     print "[color: bold]canPass == {canPass}."
     if canPass {
         print "[color: green]You are allowed to pass!"
@@ -21,7 +23,7 @@ function checkPass {
 }
 
 // checks if the player is of age
-function checkAge {
+function export checkAge {
     print "[color: bold]age == {age}. Minimum age is {MIN_AGE}."
 
     if age >= MIN_AGE

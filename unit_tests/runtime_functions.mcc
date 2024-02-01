@@ -1,0 +1,31 @@
+// $meta-start
+// $meta e30=
+// $meta-props eyJkZWJ1ZyI6InRydWUiLCJkZWNvcmF0ZSI6ImZhbHNlIiwiZXhwb3J0X2FsbCI6ImZhbHNlIn0=
+// $meta-end
+feature tests
+feature uninstall
+
+define int a
+define int b
+
+test minMax {
+    a = 50
+    b = 20
+    assert min(a, b) == 20
+    assert min(b, a) == 20
+    assert max(a, b) == 50
+    assert max(b, a) == 50
+}
+
+test rounding {
+    define value = 1.234
+    assert ceiling(value) == 2
+    value = 1.5
+    assert round(value) == 2
+    value = 1.499
+    assert round(value) == 1
+    value = 8.724
+    assert floor(value) == 8
+    value = 8.000
+    assert floor(value) == 8
+}

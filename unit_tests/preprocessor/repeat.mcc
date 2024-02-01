@@ -1,5 +1,7 @@
 // $meta-start
 // $meta e30=
+// $meta-props eyJkZWJ1ZyI6ImZhbHNlIiwiZGVjb3JhdGUiOiJ0cnVlIiwiZXhwb3J0X2FsbCI6InRydWUifQ==
+// $meta-end
 // Unit Test: $repeat Directive Variants
 
 // Basic count up.
