@@ -3,7 +3,7 @@
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W6JMNO1)<br />
 [`📜 Source Code`](https://github.com/7UKECREAT0R/MCCompiledSource) | view the source code!<br />
 [`📦 Releases`](https://github.com/7UKECREAT0R/MCCompiled/releases) | consider using the [installer](https://github.com/7UKECREAT0R/MCCompiled/raw/main/mc-compiled-installer.zip). all of the raw pre-compiled binaries of the software. <br />
-[`🌐 Wiki`](https://github.com/7UKECREAT0R/MCCompiled/wiki) | learn about the language and how to use it.<br />
+[`🌐 Wiki`](https://lukecreator.dev/mccompiled/docs/cheat-sheet.html) | learn about the language and how to use it.<br />
 [`🗣️ Discord`](https://discord.gg/Jd4UCueKA8) | share ideas, show off work, and report bugs!<br />
 [`🖥️ IDE`](https://lukecreator.dev/mccompiled/editor.html) | editor with keyword info, error detection, and compilation.<br />
 
